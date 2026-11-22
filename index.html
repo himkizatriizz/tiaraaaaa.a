@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrivatEku — Edukasi Perlindungan Data Pribadi dalam Aplikasi Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Progress Bar ===== -->
+  <div id="progress-bar"></div>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <span class="author-tag">TIARA · A-H0625005</span>
+      <a href="#beranda" class="logo">
+        <span class="logo-icon">🔒</span> Privat<span class="accent">Eku</span>
+      </a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#materi-1">Materi</a></li>
+      <li><a href="#tips">Tips Praktik</a></li>
+      <li><a href="#glosarium">Glosarium</a></li>
+      <li><a href="#kuis">Kuis</a></li>
+      <li><a class="btn-cta-nav" href="#kursus">Mulai Belajar</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="beranda">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <span class="badge animate-in">🇮🇩 Edukasi UU No. 27 Tahun 2022</span>
+      <h1 class="animate-in delay-1">Jaga Data Pribadi,<br /><span class="gradient-text">Jaga Diri Kita.</span></h1>
+      <p class="hero-sub animate-in delay-2">
+        Belajar memahami, melindungi, dan mengendalikan data pribadi kamu di setiap aplikasi digital — dari media sosial sampai layanan keuangan.
+      </p>
+      <div class="hero-actions animate-in delay-3">
+        <a href="#kursus" class="btn-primary">🚀 Mulai Belajar</a>
+        <a href="#kuis" class="btn-ghost">🧠 Uji Pengetahuan</a>
+      </div>
+      <div class="hero-stats animate-in delay-4">
+        <div class="stat"><strong data-count="8">0</strong><span>Bab Materi</span></div>
+        <div class="stat"><strong data-count="40">0</strong><span>Poin Tips</span></div>
+        <div class="stat"><strong data-count="15">0</strong><span>Soal Kuis</span></div>
+        <div class="stat"><strong data-count="60">0</strong><span>Istilah Glosarium</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== COURSE / TOC ===== -->
+  <section class="section" id="kursus">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Silabus Lengkap</span>
+        <h2>Kurikulum Privasi Digital</h2>
+        <p>8 bab berurutan dari fondasi hingga praktik lanjutan.</p>
+      </div>
+      <div class="course-grid" id="course-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== MATERI ===== -->
+  <main class="materi" id="materi-1">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Materi Lengkap</span>
+        <h2>Bahan Ajar Utama</h2>
+      </div>
+
+      <!-- BAB 1 -->
+      <article class="bab reveal" data-bab="1">
+        <div class="bab-header">
+          <span class="bab-num">BAB 1</span>
+          <h3>Pengertian Data Pribadi & <span class="accent">PDP</span></h3>
+          <p class="bab-intro">Membedakan data biasa dengan data pribadi yang dilindungi hukum.</p>
+        </div>
+        <div class="bab-body">
+          <div class="bab-content">
+            <p><strong>Data pribadi</strong> adalah informasi tentang orang perseorangan yang sudah, sedang, atau akan dihubungkan dengan informasi yang dapat mengidentifikasi orang tersebut, baik langsung maupun tidak langsung. Dalam UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP), data pribadi dibagi menjadi dua kategori utama.</p>
+
+            <h4>1. Data Pribadi yang Bersifat Umum</h4>
+            <p>Data yang dapat diakses oleh umum atau hanya dilindungi oleh sekumpulan individu dalam organisasi/lembaga.</p>
+            <table class="data-table">
+              <thead><tr><th>Contoh</th><th>Keterangan</th></tr></thead>
+              <tbody>
+                <tr><td>Nama lengkap</td><td>Nama di akun media sosial</td></tr>
+                <tr><td>Nomor telepon</td><td>Nomor yang terdaftar di aplikasi</td></tr>
+                <tr><td>Alamat email</td><td>Email untuk login atau notifikasi</td></tr>
+                <tr><td>Lokasi</td><td>GPS, alamat rumah, tempat kerja</td></tr>
+                <tr><td>Foto wajah</td><td>Foto profil, foto KTP</td></tr>
+                <tr><td>NIK / nomor KTP</td><td>Nomor induk kependudukan</td></tr>
+                <tr><td>Data akun</td><td>Username, riwayat transaksi</td></tr>
+              </tbody>
+            </table>
+
+            <h4>2. Data Pribadi yang Bersifat Spesifik</h4>
+            <p>Data yang hanya dapat diakses oleh sekelompok orang tertentu dan bersifat sensitif. Pelanggarannya dapat mengakibatkan diskriminasi atau kerugian besar bagi subjek data.</p>
+            <table class="data-table special">
+              <thead><tr><th>Jenis</th><th>Contoh</th><th>Risiko</th></tr></thead>
+              <tbody>
+                <tr><td>Data kesehatan</td><td>Hasil lab, diagnosa, riwayat penyakit</td><td>Stigmatisasi, penolakan asuransi</td></tr>
+                <tr><td>Data keuangan</td><td>Nomor rekening, saldo, kartu kredit</td><td>Pencurian dana, pemerasan</td></tr>
+                <tr><td>Data genetik & biometrik</td><td>Sidik jari, wajah, DNA</td><td>Penyalahgunaan identitas</td></tr>
+                <tr><td>Data anak</td><td>Data anak di bawah 17 tahun</td><td>Eksploitasi, perundungan</td></tr>
+                <tr><td>Data keagamaan</td><td>Agama, keyakinan</td><td>Diskriminasi</td></tr>
+                <tr><td>Data kriminal</td><td>Catatan polisi, persidangan</td><td>Reputasi rusak</td></tr>
+              </tbody>
+            </table>
+
+            <div class="callout info">
+              <strong>💡 Ingat:</strong> Kalau sebuah data bisa dipakai untuk mengenali siapa kamu, maka itu adalah data pribadi — dan kamu berhak melindunginya.
+            </div>
+          </div>
+          <aside class="bab-aside">
+            <div class="mini-card"><h5>📏 Tes Cepat</h5><p>“Apakah data ini bisa mengidentifikasi saya?” Ya → Data Pribadi.</p></div>
+            <div class="mini-card"><h5>⚖️ Landasan</h5><p>UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi.</p></div>
+            <div class="mini-card"><h5>🌍 Konteks Global</h5><p>EU punya GDPR; Indonesia punya UU PDP yang berlaku penuh sejak Oktober 2024.</p></div>
+          </aside>
+        </div>
+      </article>
+
+      <!-- BAB 2 -->
+      <article class="bab reveal" data-bab="2">
+        <div class="bab-header">
+          <span class="bab-num">BAB 2</span>
+          <h3>Dasar Hukum: <span class="accent">UU PDP Indonesia</span></h3>
+          <p class="bab-intro">Kenali hak dan kewajibanmu secara hukum.</p>
+        </div>
+        <div class="bab-body">
+          <div class="bab-content">
+            <p>Indonesia memiliki <strong>Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP)</strong>. Undang-undang ini mengatur siapa yang bisa mengumpulkan, memproses, dan menggunakan data pribadimu — baik oleh instansi pemerintah maupun swasta/penyelenggara sistem elektronik.</p>
+
+            <h4>Siapa yang Diatur?</h4>
+            <ul class="check-list">
+              <li><strong>Subjek Data Pribadi</strong> — kamu, orang yang datanya diproses.</li>
+              <li><strong>Pengendali Data Pribadi</strong> — pihak yang menentukan tujuan dan cara pemrosesan (misal: aplikasi media sosial).</li>
+              <li><strong>Prosesor Data Pribadi</strong> — pihak yang memproses data atas nama pengendali (misal: server hosting, payment gateway).</li>
+              <li><strong>Pejabat Pelindungan Data</strong> — wajib ada di instansi pemerintah & badan hukum tertentu.</li>
+            </ul>
+
+            <h4>Hak-Hak Subjek Data Pribadi</h4>
+            <div class="rights-grid">
+              <div class="right-card"><span class="rc-icon">👁️</span><h5>Hak Diberitahu</h5><p>Kamu berhak tahu data apa saja yang dikumpulkan dan untuk apa.</p></div>
+              <div class="right-card"><span class="rc-icon">✏️</span><h5>Hak Memperbaiki</h5><p>Meminta koreksi data yang keliru atau tidak akurat.</p></div>
+              <div class="right-card"><span class="rc-icon">🗑️</span><h5>Hak Menghapus</h5><p>Meminta penghapusan data (“hak untuk dilupakan”).</p></div>
+              <div class="right-card"><span class="rc-icon">⏸️</span><h5>Hak Menarik Persetujuan</h5><p>Menarik izin kapan saja selama pengolahan masih berlangsung.</p></div>
+              <div class="right-card"><span class="rc-icon">📦</span><h5>Hak Mendapatkan Salinan</h5><p>Meminta salinan data pribadi yang sedang diproses.</p></div>
+              <div class="right-card"><span class="rc-icon">🚫</span><h5>Hak Menolak Pemasaran</h5><p>Menolak pemrosesan data untuk tujuan pemasaran langsung.</p></div>
+              <div class="right-card"><span class="rc-icon">🔀</span><h5>Hak Portabilitas</h5><p>Memindahkan data ke layanan lain (misal: export kontak, foto).</p></div>
+              <div class="right-card"><span class="rc-icon">⚖️</span><h5>Hak Mengajukan Keberatan</h5><p>Mengajukan keberatan atas pemrosesan data yang tidak adil.</p></div>
+            </div>
+
+            <h4>Sanksi Pelanggaran</h4>
+            <p>UU PDP menjatuhkan sanksi administratif (teguran hingga denda hingga 2% pendapatan tahunan) dan pidana (denda hingga Rp5 miliar dan/atau penjara maksimal 5–6 tahun) bagi pelanggaran berat.</p>
+          </div>
+          <aside class="bab-aside">
+            <div class="mini-card warn"><h5>⚠️ Perhatikan</h5><p>Penegakan penuh UU PDP baru berjalan sejak 17 Oktober 2024.</p></div>
+            <div class="mini-card"><h5>📜 Regulasi Terkait</h5><p>UU ITE, PP 71/2019, Permenkominfo, dan aturan Bank Indonesia untuk data keuangan.</p></div>
+          </aside>
+        </div>
+      </article>
+
+      <!-- BAB 3 -->
+      <article class="bab reveal" data-bab="3">
+        <div class="bab-header">
+          <span class="bab-num">BAB 3</span>
+          <h3>Prinsip Dasar <span class="accent">Pelindungan Data</span></h3>
+          <p class="bab-intro">Lima prinsip utama yang harus dipenuhi setiap pengendali data.</p>
+        </div>
+        <div class="bab-body">
+          <div class="bab-content">
+            <div class="prinsip-list">
+              <div class="prinsip-item"><span class="p-num">1</span><div><h5>Transparency / Transparansi</h5><p>Pemrosesan data harus terbuka dan mudah dipahami subjek data.</p></div></div>
+              <div class="prinsip-item"><span class="p-num">2</span><div><h5>Purpose Limitation / Batas Tujuan</h5><p>Data hanya boleh dipakai untuk tujuan yang sudah dinyatakan, tidak boleh dipakai sembarangan.</p></div></div>
+              <div class="prinsip-item"><span class="p-num">3</span><div><h5>Data Minimization / Minimalisasi</h5><p>Hanya kumpulkan data yang benar-benar diperlukan.</p></div></div>
+              <div class="prinsip-item"><span class="p-num">4</span><div><h5>Storage Limitation / Batas Penyimpanan</h5><p>Data tidak boleh disimpan lebih lama dari yang diperlukan.</p></div></div>
+              <div class="prinsip-item"><span class="p-num">5</span><div><h5>Integrity & Confidentiality / Integritas & Kerahasiaan</h5><p>Data harus akurat, aman, dan dilindungi dari akses tidak sah.</p></div></div>
+              <div class="prinsip-item"><span class="p-num">6</span><div><h5>Lawfulness / Keabsahan</h5><p>Pemrosesan harus punya dasar hukum — persetujuan, kewajiban hukum, atau kepentingan sah.</p></div></div>
+              <div class="prinsip-item"><span class="p-num">7</span><div><h5>Accountability / Akuntabilitas</h5><p>Pengendali data harus bisa membuktikan kepatuhan atas semua prinsip di atas.</p></div></div>
+            </div>
+          </div>
+          <aside class="bab-aside">
+            <div class="mini-card"><h5>🔍 Pertanyaan Kunci</h5><p>“Untuk apa aplikasi ini butuh akses ke kontakkuku?” — jika jawabannya tidak jelas, itu tanda bahaya.</p></div>
+          </aside>
+        </div>
+      </article>
+
+      <!-- BAB 4 -->
+      <article class="bab reveal" data-bab="4">
+        <div class="bab-header">
+          <span class="bab-num">BAB 4</span>
+          <h3>Jejak Digital: <span class="accent">Apa yang Dicatat?</span></h3>
+          <p class="bab-intro">Setiap aplikasi meninggalkan jejak data tentang aktivitasmu.</p>
+        </div>
+        <div class="bab-body">
+          <div class="bab-content">
+            <p><strong>Jejak digital (digital footprint)</strong> adalah seluruh data yang kamu tinggalkan saat beraktivitas online. Jejak ini dibagi menjadi dua jenis:</p>
+            <ul class="check-list">
+              <li><strong>Active footprint</strong> — data yang kamu kirim secara sadar: postingan, komentar, foto, formulir.</li>
+              <li><strong>Passive footprint</strong> — data yang direkam diam-diam: IP address, lokasi GPS, perangkat, waktu akses, perilaku browsing.</li>
+            </ul>
+
+            <h4>Data yang Sering Dikumpulkan Aplikasi</h4>
+            <table class="data-table">
+              <thead><tr><th>Kategori</th><th>Contoh Data</th><th>Tujuan (klaim)</th></tr></thead>
+              <tbody>
+                <tr><td>Identitas</td><td>Nama, email, nomor HP</td><td>Registrasi & verifikasi</td></tr>
+                <tr><td>Kontak</td><td>Daftar kontak, daftar telepon</td><td>Fitur "temukan teman"</td></tr>
+                <tr><td>Lokasi</td><td>GPS, kota, WiFi terdekat</td><td>Iklan lokal, tag lokasi</td></tr>
+                <tr><td>Perangkat</td><td>IMEI, OS, model HP</td><td>Keamanan & analitik</td></tr>
+                <tr><td>Konten</td><td>Foto, video, chat</td><td>Layanan inti aplikasi</td></tr>
+                <tr><td>Perilaku</td><td>Klik, durasi, scroll</td><td>Profiling & personalisasi iklan</td></tr>
+                <tr><td>Keuangan</td><td>Transaksi, kartu, e-wallet</td><td>Pembayaran & kredit</td></tr>
+              </tbody>
+            </table>
+
+            <div class="callout warn">
+              <strong>⚠️ Fakta mengejutkan:</strong> Banyak aplikasi gratis "membayar" layanannya dengan datamu. Kamu pelanggan atau produknya? Kalau gratis, kemungkinan kamu produknya.
+            </div>
+          </div>
+          <aside class="bab-aside">
+            <div class="mini-card"><h5>🧭 Cek Izinmu</h5><p>Android/iOS: Pengaturan → Aplikasi → Izin → audit tiap aplikasi bulanan.</p></div>
+          </aside>
+        </div>
+      </article>
+
+      <!-- BAB 5 -->
+      <article class="bab reveal" data-bab="5">
+        <div class="bab-header">
+          <span class="bab-num">BAB 5</span>
+          <h3>Cara Membaca <span class="accent">Kebijakan Privasi</span></h3>
+          <p class="bab-intro">Panduan praktis membaca dokumen yang sering dilewati orang.</p>
+        </div>
+        <div class="bab-body">
+          <div class="bab-content">
+            <p><strong>Kebijakan Privasi (Privacy Policy)</strong> adalah dokumen resmi yang menjelaskan data apa yang dikumpulkan, cara penggunaannya, dan hakmu sebagai pengguna. Kebanyakan orang langsung klik "Setuju" tanpa membaca — padahal di situlah seluruh aturan mainnya.</p>
+
+            <h4>Bagian Penting yang Harus Dicari</h4>
+            <div class="steps">
+              <div class="step"><span>1</span><p><strong>Informasi yang Dikumpulkan</strong> — daftar data apa saja. Semakin panjang daftarnya, semakin banyak yang diambil.</p></div>
+              <div class="step"><span>2</span><p><strong>Tujuan Penggunaan</strong> — apakah data dipakai hanya untuk layanan, atau juga dijual/dibagi ke pihak ketiga?</p></div>
+              <div class="step"><span>3</span><p><strong>Pihak Ketiga</strong> — cari kata "share", "third party", "advertising partners", "analytics".</p></div>
+              <div class="step"><span>4</span><p><strong>Retensi Data</strong> — berapa lama data disimpan? Setelah hapus akun, apakah data benar-benar hilang?</p></div>
+              <div class="step"><span>5</span><p><strong>Hak Pengguna</strong> — apakah ada cara untuk mengakses, mengoreksi, atau menghapus datamu?</p></div>
+              <div class="step"><span>6</span><p><strong>Keamanan</strong> — apakah dijelaskan metode enkripsi dan perlindungan data?</p></div>
+              <div class="step"><span>7</span><p><strong>Kontak DPO / Data Protection Officer</strong> — apakah ada kontak resmi untuk pengaduan?</p></div>
+            </div>
+
+            <h4>Red Flags — Tanda Kebijakan Privasi Buruk</h4>
+            <ul class="red-list">
+              <li>Kebijakan privasi tidak ada atau sangat singkat.</li>
+              <li>Mengizinkan penggunaan data untuk "keperluan bisnis" tanpa batasan jelas.</li>
+              <li>Tidak menjelaskan siapa pihak ketiga penerima data.</li>
+              <li>Tidak ada opsi menghapus akun atau data.</li>
+              <li>Bahasa yang sengaja membingungkan atau ambigu.</li>
+              <li>Berbentuk "all-in-one consent" — satu tombol setuju untuk semuanya.</li>
+            </ul>
+          </div>
+          <aside class="bab-aside">
+            <div class="mini-card info"><h5>⏱️ Trik</h5><p>Gunakan Ctrl+F dan cari kata: "sell", "share", "third party", "advertis". Hasilnya langsung kelihatan.</p></div>
+          </aside>
+        </div>
+      </article>
+
+      <!-- BAB 6 -->
+      <article class="bab reveal" data-bab="6">
+        <div class="bab-header">
+          <span class="bab-num">BAB 6</span>
+          <h3>Risiko & Ancaman: <span class="accent">Apa yang Bisa Terjadi?</span></h3>
+          <p class="bab-intro">Kenali vektor serangan dan dampak kebocoran data.</p>
+        </div>
+        <div class="bab-body">
+          <div class="bab-content">
+            <h4>Ancaman Utama terhadap Data Pribadi</h4>
+            <table class="data-table risk">
+              <thead><tr><th>Ancaman</th><th>Cara Kerja</th><th>Dampak</th></tr></thead>
+              <tbody>
+                <tr><td>Phishing</td><td>Email/WA palsu meniru layanan resmi untuk mencuri kredensial</td><td>Akun diretas, data keuangan dicuri</td></tr>
+                <tr><td>Data Breach</td><td>Kebocoran data dari server perusahaan</td><td>Data dijual di dark web</td></tr>
+                <tr><td>Malware</td><td>Software jahat mencuri data di perangkat</td><td>Kredensial, OTP, dokumen bocor</td></tr>
+                <tr><td>Social Engineering</td><td>Membujuk korban lewat manipulasi psikologis</td><td>Informasi sensitif diberikan sukarela</td></tr>
+                <tr><td>Oversharing</td><td>Kamu sendiri membagikan terlalu banyak di media sosial</td><td>Identitas dipalsukan, target penipuan</td></tr>
+                <tr><td>Third-Party Tracking</td><td>Tracker pihak ketiga memantau perilaku lintas situs</td><td>Profil iklan detail, penjualan data</td></tr>
+                <tr><td>SIM Swap</td><td>Pindah nomor HP ke kartu baru untuk bypass OTP</td><td>Akses akun bank/sosmed</td></tr>
+                <tr><td>Deepfake & Impersonation</td><td>Pemalsuan identitas visual/audio</td><td>Penipuan, pencemaran nama baik</td></tr>
+              </tbody>
+            </table>
+
+            <h4>Dampak Nyata Kebocoran Data</h4>
+            <div class="impact-grid">
+              <div class="impact"><span>💸</span><p><strong>Kerugian finansial</strong> — pencurian dana, pinjaman atas nama korban.</p></div>
+              <div class="impact"><span>🪪</span><p><strong>Pencurian identitas</strong> — KTP, KK, paspor dipakai untuk kejahatan.</p></div>
+              <div class="impact"><span>😰</span><p><strong>Stigmatisasi</strong> — data kesehatan/agama bocor memicu diskriminasi.</p></div>
+              <div class="impact"><span>🧒</span><p><strong>Bahaya pada anak</strong> — eksploitasi, grooming, perundungan daring.</p></div>
+              <div class="impact"><span>📉</span><p><strong>Reputasi rusak</strong> — informasi pribadi dipermukaan tanpa izin.</p></div>
+              <div class="impact"><span>⚖️</span><p><strong>Masalah hukum</strong> — data bisa dijadikan alat tuduhan palsu.</p></div>
+            </div>
+          </div>
+          <aside class="bab-aside">
+            <div class="mini-card warn"><h5>🚨 Ingat</h5><p>OTP adalah rahasia — tidak ada pihak resmi yang akan pernah memintanya.</p></div>
+          </aside>
+        </div>
+      </article>
+
+      <!-- BAB 7 -->
+      <article class="bab reveal" data-bab="7">
+        <div class="bab-header">
+          <span class="bab-num">BAB 7</span>
+          <h3>Langkah Praktis: <span class="accent">Melindungi Diri</span></h3>
+          <p class="bab-intro">Checklist keamanan digital yang bisa langsung dipraktikkan.</p>
+        </div>
+        <div class="bab-body">
+          <div class="bab-content">
+            <h4>A. Manajemen Akun & Password</h4>
+            <ul class="check-list">
+              <li>Pakai <strong>password manager</strong> dan password unik untuk tiap aplikasi.</li>
+              <li>Aktifkan <strong>Autentikasi Dua Faktor (2FA)</strong> — utamakan aplikasi authenticator, bukan SMS.</li>
+              <li>Jangan pernah pakai ulang password antar layanan.</li>
+              <li>Periksa aktivitas login dan perangkat yang terhubung secara rutin.</li>
+            </ul>
+            <h4>B. Privasi di Media Sosial</h4>
+            <ul class="check-list">
+              <li>Batasi audiens postingan — gunakan mode private.</li>
+              <li>Matikan geotag lokasi pada foto yang diposting.</li>
+              <li>Hindari memposting data sensitif: KTP, tiket perjalanan, boarding pass, struk belanja.</li>
+              <li>Tinjau tag foto dan permintaan pertemanan secara berkala.</li>
+            </ul>
+            <h4>C. Aplikasi & Izin</h4>
+            <ul class="check-list">
+              <li>Hapus aplikasi yang tidak dipakai lebih dari 3 bulan.</li>
+              <li>Tolak izin yang tidak relevan (misal: aplikasi senter butuh akses kontak?).</li>
+              <li>Periksa kebijakan privasi sebelum instalasi.</li>
+              <li>Gunakan email/nomor telepon sekunder untuk registrasi layanan tidak penting.</li>
+            </ul>
+            <h4>D. Transaksi & Keuangan</h4>
+            <ul class="check-list">
+              <li>Hanya bertransaksi di aplikasi dengan ikon gembok (HTTPS) dan reputasi jelas.</li>
+              <li>Aktifkan notifikasi transaksi untuk deteksi dini.</li>
+              <li>Jangan simpan data kartu di banyak aplikasi sekaligus.</li>
+            </ul>
+          </div>
+          <aside class="bab-aside">
+            <div class="mini-card success"><h5>✅ Prioritas Tertinggi</h5><p>1) Password unik + 2FA. 2) Update aplikasi rutin. 3) Audit izin bulanan.</p></div>
+          </aside>
+        </div>
+      </article>
+
+      <!-- BAB 8 -->
+      <article class="bab reveal" data-bab="8">
+        <div class="bab-header">
+          <span class="bab-num">BAB 8</span>
+          <h3>Hakmu sebagai <span class="accent">Pengguna</span></h3>
+          <p class="bab-intro">Bagaimana cara menuntut hak dan melapor jika data disalahgunakan.</p>
+        </div>
+        <div class="bab-body">
+          <div class="bab-content">
+            <h4>Jika Data Pribadimu Disalahgunakan</h4>
+            <div class="steps">
+              <div class="step"><span>1</span><p><strong>Kumpulkan bukti</strong> — screenshot, URL, tanggal, dan salinan pesan.</p></div>
+              <div class="step"><span>2</span><p><strong>Hubungi pengendali data</strong> — kirim permintaan tertulis lewat email/fomulir resmi.</p></div>
+              <div class="step"><span>3</span><p><strong>Ajukan penghapusan/koreksi</strong> — gunakan hak subjek data dari UU PDP.</p></div>
+              <div class="step"><span>4</span><p><strong>Laporkan ke otoritas</strong> — Kementerian Komunikasi dan Digital (Komdigi).</p></div>
+              <div class="step"><span>5</span><p><strong>Laporkan ke kepolisian</strong> — untuk kasus penipuan, pemalsuan identitas, atau pencemaran.</p></div>
+            </div>
+            <h4>Lembaga yang Bisa Dihubungi</h4>
+            <table class="data-table">
+              <thead><tr><th>Lembaga</th><th>Untuk Apa</th></tr></thead>
+              <tbody>
+                <tr><td>Komdigi</td><td>Pengaduan pelanggaran UU PDP & layanan digital</td></tr>
+                <tr><td>Polisi (Polda/Polres)</td><td>Tindak pidana: penipuan, pemerasan, pemalsuan</td></tr>
+                <tr><td>LPSK</td><td>Perlindungan saksi/korban kejahatan siber</td></tr>
+                <tr><td>Ombudsman</td><td>Maladministrasi layanan publik</td></tr>
+                <tr><td>BSSN</td><td>Ancaman siber & keamanan infrastruktur</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <aside class="bab-aside">
+            <div class="mini-card info"><h5>📝 Contoh Permintaan</h5><p>"Dengan ini saya meminta penghapusan data pribadi saya sesuai Pasal 5 UU PDP, yaitu hak menghapus data."</p></div>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- ===== TIPS PRAKTIK ===== -->
+  <section class="section tips-section" id="tips">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Praktik Sehari-hari</span>
+        <h2>40 Tips Perlindungan Data Pribadi</h2>
+        <p>Klik kartu untuk menandai yang sudah kamu praktikkan.</p>
+      </div>
+      <div class="tips-filter">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="akun">Akun & Password</button>
+        <button class="filter-btn" data-filter="sosmed">Media Sosial</button>
+        <button class="filter-btn" data-filter="aplikasi">Aplikasi</button>
+        <button class="filter-btn" data-filter="keuangan">Keuangan</button>
+        <button class="filter-btn" data-filter="anak">Anak & Keluarga</button>
+      </div>
+      <div class="tips-grid" id="tips-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== GLOSARIUM ===== -->
+  <section class="section" id="glosarium">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Istilah Penting</span>
+        <h2>Glosarium Privasi Digital</h2>
+      </div>
+      <div class="glossary-controls">
+        <input type="text" id="glossary-search" placeholder="🔍 Cari istilah..." />
+      </div>
+      <div class="glossary-grid" id="glossary-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== KUIS ===== -->
+  <section class="section quiz-section" id="kuis">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Evaluasi Pemahaman</span>
+        <h2>Kuis Pengetahuan</h2>
+        <p>Uji pemahamanmu tentang perlindungan data pribadi.</p>
+      </div>
+      <div class="quiz-box" id="quiz-box">
+        <div class="quiz-start" id="quiz-start">
+          <div class="quiz-icon">🧠</div>
+          <h3>Siap menguji pengetahuanmu?</h3>
+          <p>15 soal pilihan ganda · langsung dapat skor</p>
+          <button class="btn-primary" id="start-quiz">Mulai Kuis</button>
+        </div>
+        <div class="quiz-body hidden" id="quiz-body">
+          <div class="quiz-progress"><div class="quiz-bar" id="quiz-bar"></div></div>
+          <div class="quiz-meta"><span id="quiz-qnum">Soal 1/15</span><span id="quiz-score">Skor: 0</span></div>
+          <h3 id="quiz-question"></h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <div class="quiz-feedback hidden" id="quiz-feedback"></div>
+          <button class="btn-primary hidden" id="next-quiz">Soal Berikutnya →</button>
+        </div>
+        <div class="quiz-result hidden" id="quiz-result">
+          <div class="result-circle" id="result-circle">0%</div>
+          <h3 id="result-title"></h3>
+          <p id="result-msg"></p>
+          <button class="btn-ghost" id="restart-quiz">🔄 Ulangi Kuis</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#beranda" class="logo"><span class="logo-icon">🔒</span> Privat<span class="accent">Eku</span></a>
+          <p class="footer-desc">Media ajar edukasi perlindungan data pribadi untuk masyarakat Indonesia.</p>
+        </div>
+        <div>
+          <h5>Materi</h5>
+          <ul>
+            <li><a href="#materi-1">Pengertian PDP</a></li>
+            <li><a href="#materi-1">UU PDP</a></li>
+            <li><a href="#materi-1">Prinsip Privasi</a></li>
+            <li><a href="#materi-1">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Praktik</h5>
+          <ul>
+            <li><a href="#tips">Tips Harian</a></li>
+            <li><a href="#glosarium">Glosarium</a></li>
+            <li><a href="#kuis">Kuis</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Sumber Hukum</h5>
+          <ul>
+            <li>UU No. 27 Tahun 2022</li>
+            <li>UU No. 11 Tahun 2008 (ITE)</li>
+            <li>PP No. 71 Tahun 2019</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Made with 🔒 untuk literasi digital Indonesia · PrivatEku 2026</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
